@@ -1,0 +1,1136 @@
+2026-01-31 22:28:24 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:28:24 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 30812,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 54149120,
+      "heapTotal": 19193856,
+      "heapUsed": 10817176,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477114.656
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:29:48 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:29:48 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 19196,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55320576,
+      "heapTotal": 18350080,
+      "heapUsed": 12504440,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477198.343
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:32:56 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:32:56 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 12996,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55115776,
+      "heapTotal": 18612224,
+      "heapUsed": 12569728,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477386.718
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:33:34 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:33:34 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 25436,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55336960,
+      "heapTotal": 18612224,
+      "heapUsed": 12496208,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477424.843
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:34:52 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:34:52 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 23632,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55083008,
+      "heapTotal": 18087936,
+      "heapUsed": 12628496,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477502.578
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:36:08 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:36:08 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 9692,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 54956032,
+      "heapTotal": 18350080,
+      "heapUsed": 12593616,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477578.812
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:37:09 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:37:09 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 20276,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55050240,
+      "heapTotal": 18350080,
+      "heapUsed": 12572392,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477639.5
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
+2026-01-31 22:37:27 [ERROR]: uncaughtException: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+Error: Cannot find module '../utils/logger'
+Require stack:
+- D:\skillmint backend\src\middlewares\error.middleware.js
+- D:\skillmint backend\src\app.js
+- D:\skillmint backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\skillmint backend\src\middlewares\error.middleware.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "D:\\skillmint backend\\src\\app.js",
+      "D:\\skillmint backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/logger'\nRequire stack:\n- D:\\skillmint backend\\src\\middlewares\\error.middleware.js\n- D:\\skillmint backend\\src\\app.js\n- D:\\skillmint backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)\n    at Module._load (node:internal/modules/cjs/loader:1227:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:328:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)\n    at Module.require (node:internal/modules/cjs/loader:1504:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (D:\\skillmint backend\\src\\middlewares\\error.middleware.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1761:14)",
+  "exception": true,
+  "date": "Sat Jan 31 2026 22:37:27 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 16760,
+    "uid": null,
+    "gid": null,
+    "cwd": "D:\\skillmint backend",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe",
+    "version": "v24.11.1",
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\skillmint backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 55037952,
+      "heapTotal": 18350080,
+      "heapUsed": 12537832,
+      "external": 2015943,
+      "arrayBuffers": 18927
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 477657.984
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1421,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1059,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1064,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1227,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 328,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 245,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1504,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "D:\\skillmint backend\\src\\middlewares\\error.middleware.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1761,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "skillmint-backend"
+}
