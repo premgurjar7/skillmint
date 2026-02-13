@@ -1,4 +1,4 @@
-// server.js - SECURE VERSION
+// server.js - COMPLETE WITH YOUR MONGODB
 console.log('🚀 Starting Secure SkillMint Backend...');
 
 require('dotenv').config();
@@ -6,19 +6,40 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
+const mongoose = require('mongoose');
 
 const app = express();
 
-// CORS
+// ========== MONGODB CONNECTION ==========
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://pgbhai259_db_user:bhai7877@cluster0.rxrmtyb.mongodb.net/skillmint?retryWrites=true&w=majority';
+
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log('✅ MongoDB Connected Successfully');
+}).catch(err => {
+    console.error('❌ MongoDB Connection Error:', err.message);
+});
+
+// ========== USER MODEL ==========
+const UserSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    role: { type: String, default: 'student' },
+    createdAt: { type: Date, default: Date.now }
+});
+
+const User = mongoose.model('User', UserSchema);
+
+// ========== MIDDLEWARE ==========
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000'],
+    origin: ['http://localhost:5173', 'http://localhost:3000', 'https://skillmint-lakn.onrender.com'],
     credentials: true
 }));
 
 app.use(express.json());
-
-// ========== MOCK DATABASE ==========
-const users = []; // In memory DB (replace with MongoDB later)
 
 // ========== UTILITY FUNCTIONS ==========
 const validateEmail = (email) => {
@@ -28,12 +49,12 @@ const validateEmail = (email) => {
 
 // ========== AUTH ROUTES ==========
 
-// ✅ SECURE REGISTER
+// ✅ REGISTER
 app.post('/api/auth/register', async (req, res) => {
     try {
         const { name, email, password } = req.body;
 
-        // 1. Check required fields
+        // Validation
         if (!name || !email || !password) {
             return res.status(400).json({
                 success: false,
@@ -41,7 +62,6 @@ app.post('/api/auth/register', async (req, res) => {
             });
         }
 
-        // 2. Validate email format
         if (!validateEmail(email)) {
             return res.status(400).json({
                 success: false,
@@ -49,7 +69,6 @@ app.post('/api/auth/register', async (req, res) => {
             });
         }
 
-        // 3. Check password length
         if (password.length < 6) {
             return res.status(400).json({
                 success: false,
@@ -57,8 +76,8 @@ app.post('/api/auth/register', async (req, res) => {
             });
         }
 
-        // 4. Check if user already exists
-        const existingUser = users.find(u => u.email === email);
+        // Check if user exists
+        const existingUser = await User.findOne({ email });
         if (existingUser) {
             return res.status(409).json({
                 success: false,
@@ -66,35 +85,31 @@ app.post('/api/auth/register', async (req, res) => {
             });
         }
 
-        // 5. Hash password
+        // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // 6. Create new user
-        const newUser = {
-            id: 'user_' + Date.now(),
+        // Create user
+        const newUser = new User({
             name,
             email,
-            password: hashedPassword,
-            role: 'student',
-            createdAt: new Date().toISOString()
-        };
+            password: hashedPassword
+        });
+        
+        await newUser.save();
 
-        users.push(newUser);
-
-        // 7. Generate JWT token
+        // Generate token
         const token = jwt.sign(
-            { userId: newUser.id, email: newUser.email },
+            { userId: newUser._id, email: newUser.email },
             process.env.JWT_SECRET || 'your-secret-key',
             { expiresIn: '7d' }
         );
 
-        // 8. Return success (without password)
         res.status(201).json({
             success: true,
             message: 'Registration successful',
             token,
             user: {
-                id: newUser.id,
+                id: newUser._id,
                 name: newUser.name,
                 email: newUser.email,
                 role: newUser.role
@@ -110,12 +125,12 @@ app.post('/api/auth/register', async (req, res) => {
     }
 });
 
-// ✅ SECURE LOGIN
+// ✅ LOGIN
 app.post('/api/auth/login', async (req, res) => {
     try {
         const { email, password } = req.body;
 
-        // 1. Check required fields
+        // Validation
         if (!email || !password) {
             return res.status(400).json({
                 success: false,
@@ -123,8 +138,8 @@ app.post('/api/auth/login', async (req, res) => {
             });
         }
 
-        // 2. Find user
-        const user = users.find(u => u.email === email);
+        // Find user
+        const user = await User.findOne({ email });
         if (!user) {
             return res.status(401).json({
                 success: false,
@@ -132,29 +147,28 @@ app.post('/api/auth/login', async (req, res) => {
             });
         }
 
-        // 3. Compare password
-        const isPasswordValid = await bcrypt.compare(password, user.password);
-        if (!isPasswordValid) {
+        // Check password
+        const isValid = await bcrypt.compare(password, user.password);
+        if (!isValid) {
             return res.status(401).json({
                 success: false,
                 message: 'Invalid credentials'
             });
         }
 
-        // 4. Generate token
+        // Generate token
         const token = jwt.sign(
-            { userId: user.id, email: user.email },
+            { userId: user._id, email: user.email },
             process.env.JWT_SECRET || 'your-secret-key',
             { expiresIn: '7d' }
         );
 
-        // 5. Return success
         res.json({
             success: true,
             message: 'Login successful',
             token,
             user: {
-                id: user.id,
+                id: user._id,
                 name: user.name,
                 email: user.email,
                 role: user.role
@@ -170,7 +184,7 @@ app.post('/api/auth/login', async (req, res) => {
     }
 });
 
-// ✅ PROTECTED ROUTE EXAMPLE
+// ✅ PROTECTED ROUTE
 const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1];
@@ -194,30 +208,50 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-// Get profile (protected)
-app.get('/api/users/profile', authenticateToken, (req, res) => {
-    const user = users.find(u => u.id === req.user.userId);
-    
-    if (!user) {
-        return res.status(404).json({
+// Get profile
+app.get('/api/users/profile', authenticateToken, async (req, res) => {
+    try {
+        const user = await User.findById(req.user.userId).select('-password');
+        
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: 'User not found'
+            });
+        }
+
+        res.json({
+            success: true,
+            data: user
+        });
+    } catch (error) {
+        res.status(500).json({
             success: false,
-            message: 'User not found'
+            message: 'Server error'
         });
     }
-
-    res.json({
-        success: true,
-        data: {
-            id: user.id,
-            name: user.name,
-            email: user.email,
-            role: user.role,
-            createdAt: user.createdAt
-        }
-    });
 });
 
-// ========== COURSES (Public) ==========
+// ========== HEALTH CHECK ==========
+app.get('/health', async (req, res) => {
+    try {
+        const userCount = await User.countDocuments();
+        res.json({
+            status: 'healthy',
+            timestamp: new Date().toISOString(),
+            database: 'connected',
+            users: userCount
+        });
+    } catch (error) {
+        res.json({
+            status: 'degraded',
+            database: 'disconnected',
+            error: error.message
+        });
+    }
+});
+
+// ========== COURSES ==========
 app.get('/api/courses', (req, res) => {
     res.json({
         success: true,
@@ -225,38 +259,6 @@ app.get('/api/courses', (req, res) => {
             { id: 1, title: 'Web Development', price: 499 },
             { id: 2, title: 'JavaScript', price: 799 }
         ]
-    });
-});
-
-// Enroll in course (protected)
-app.post('/api/courses/enroll', authenticateToken, (req, res) => {
-    const { courseId } = req.body;
-
-    if (!courseId) {
-        return res.status(400).json({
-            success: false,
-            message: 'Course ID required'
-        });
-    }
-
-    res.json({
-        success: true,
-        message: 'Enrolled successfully',
-        data: {
-            enrollmentId: 'enroll_' + Date.now(),
-            courseId,
-            userId: req.user.userId,
-            enrolledAt: new Date().toISOString()
-        }
-    });
-});
-
-// ========== HEALTH CHECK ==========
-app.get('/health', (req, res) => {
-    res.json({
-        status: 'healthy',
-        timestamp: new Date().toISOString(),
-        usersCount: users.length
     });
 });
 
@@ -276,11 +278,6 @@ app.listen(PORT, () => {
     console.log('='.repeat(50));
     console.log(`📍 Port: ${PORT}`);
     console.log(`🌐 URL: http://localhost:${PORT}`);
-    console.log('='.repeat(50));
-    console.log('\n📢 SECURE ENDPOINTS:');
-    console.log('   POST /api/auth/register  - ✅ With validation');
-    console.log('   POST /api/auth/login     - ✅ With password check');
-    console.log('   GET  /api/users/profile  - 🔒 Protected');
-    console.log('   POST /api/courses/enroll - 🔒 Protected');
+    console.log(`📦 MongoDB: Connected`);
     console.log('='.repeat(50));
 });
